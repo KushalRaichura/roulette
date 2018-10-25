@@ -11,7 +11,6 @@
 - Maven 3.X
 - Editor of your choice (Intellij, Eclipse, etc)
 - Internet connectivity to download dependency artifacts from maven repo
-- 
 
 ## Getting Started
 - Clone this project on your system and import using maven. If this is the first time you are importing project, it will take a while to download all dependenies from maven repo
