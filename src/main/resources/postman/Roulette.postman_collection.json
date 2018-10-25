@@ -1,0 +1,297 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Roulette",
+		"_postman_id": "0090c7ea-8f7e-920f-8a09-b96e10b51395",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "empty bet",
+			"request": {
+				"url": "http://localhost:8080/roulette/v1/placeBet",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"bets\": [ { }]}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "number bet",
+			"request": {
+				"url": "http://localhost:8080/roulette/v1/placeBet",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bets\": [\r\n        {\r\n            \"type\": \"Number\",\r\n            \"betAmount\": 10,\r\n            \"number\": 10\r\n        }\r\n    ]\r\n}\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "color bet",
+			"request": {
+				"url": "http://localhost:8080/roulette/v1/placeBet",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bets\": [\r\n        {\r\n            \"type\": \"Red\",\r\n            \"betAmount\": 10\r\n        }\r\n    ]\r\n}\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "cornor bet",
+			"request": {
+				"url": "http://localhost:8080/roulette/v1/placeBet",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bets\": [\r\n        {\r\n            \"type\": \"Corner\",\r\n            \"pockets\": [1,4,2,5],\r\n            \"betAmount\": 10\r\n        }\r\n    ]\r\n}\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "double line bet",
+			"request": {
+				"url": "http://localhost:8080/roulette/v1/placeBet",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bets\": [\n        {\n            \"type\": \"DoubleLine\",\n            \"betAmount\": 10,\n            \"pockets\": [\n                1,\n                2,\n                3,\n                4,\n                5,\n                6\n            ]\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "line bet",
+			"request": {
+				"url": "http://localhost:8080/roulette/v1/placeBet",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bets\": [\n        {\n            \"type\": \"DoubleLine\",\n            \"betAmount\": 10,\n            \"pockets\": [\n                1,\n                2,\n                3\n            ]\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "split bet",
+			"request": {
+				"url": "http://localhost:8080/roulette/v1/placeBet",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bets\": [\n        {\n            \"type\": \"Split\",\n            \"betAmount\": 10,\n            \"pockets\": [\n                31,\n                34\n            ]\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "bottom row bet",
+			"request": {
+				"url": "http://localhost:8080/roulette/v1/placeBet",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bets\": [\n        {\n            \"type\": \"BottomRow\",\n            \"betAmount\": 10\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "dozen 1 bet",
+			"request": {
+				"url": "http://localhost:8080/roulette/v1/placeBet",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bets\": [\n        {\n            \"type\": \"Dozen1\",\n            \"betAmount\": 10\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "first half bet",
+			"request": {
+				"url": "http://localhost:8080/roulette/v1/placeBet",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bets\": [\n        {\n            \"type\": \"FirstHalf\",\n            \"betAmount\": 10\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "odd bet",
+			"request": {
+				"url": "http://localhost:8080/roulette/v1/placeBet",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bets\": [\n        {\n            \"type\": \"Odd\",\n            \"betAmount\": 10\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
