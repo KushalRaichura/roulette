@@ -3,7 +3,7 @@
 > Roulette is a casino game named after the French word meaning little wheel. In the game, players may choose to place bets on either a single number, various groupings of numbers, the colors red or black, whether the number is odd or even, or if the numbers are high (19–36) or low (1–18)
 
 This is integrated with Travis for Continuous integration
-### status
+### CI Status
 [![Build Status](https://travis-ci.org/KushalRaichura/roulette.svg?branch=master)](https://travis-ci.org/KushalRaichura/roulette)
 
 ## API
