@@ -5,8 +5,6 @@ package com.game.play.roulette.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Aspect;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -18,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class LoggingAspect {
 
-    private final static Logger LOGGER = LoggerFactory.getLogger(LoggingAspect.class);
+    // private final static Logger LOGGER = LoggerFactory.getLogger(LoggingAspect.class);
 
     // @Around(value = "execution(* com.game.play.roulette.bettype.*.*(..))")
     public void around(ProceedingJoinPoint joinPoint) throws Throwable {

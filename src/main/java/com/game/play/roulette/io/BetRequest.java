@@ -18,7 +18,7 @@ public class BetRequest {
 
     @NotNull
     @Size(min = 1, max = 10, message = "Numbers of bets should between 1 and 10")
-    List<Bet> bets;
+    private List<Bet> bets;
 
     public BetRequest() {
         this.bets = new ArrayList<>();

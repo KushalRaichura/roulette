@@ -4,8 +4,6 @@
 package com.game.play.roulette.exception;
 
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpHeaders;
@@ -24,7 +22,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
  * ApplicationExceptionHandler.java - This class is Global exception handler and intercepts requests on all rest
  * controller
  * 
-
+ * 
  * @since 23 Sep 2018
  */
 @ControllerAdvice
@@ -32,7 +30,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class ApplicationExceptionHandler extends ResponseEntityExceptionHandler {
 
-    private final static Logger LOGGER = LoggerFactory.getLogger(ApplicationExceptionHandler.class);
+    // private final static Logger LOGGER = LoggerFactory.getLogger(ApplicationExceptionHandler.class);
 
     @Override
     protected ResponseEntity<Object> handleHttpMessageNotReadable(HttpMessageNotReadableException ex, HttpHeaders headers,

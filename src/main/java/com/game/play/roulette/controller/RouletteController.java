@@ -23,7 +23,7 @@ import com.game.play.roulette.service.RouletteService;
 public class RouletteController {
 
     @Autowired
-    RouletteService rouletteService;
+    private RouletteService rouletteService;
 
     @PostMapping("/v1/placeBet")
     public BetResponse placeBet(@Valid @RequestBody BetRequest betRequest) {
