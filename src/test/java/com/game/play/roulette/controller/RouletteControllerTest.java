@@ -31,7 +31,7 @@ public class RouletteControllerTest {
     private static final String ROULETTE_PLACE_BET = "/roulette/v1/placeBet";
 
     @Autowired
-    MockMvc mockMvc;
+    private MockMvc mockMvc;
 
     @MockBean
     private RandomNumberGenerator randomNumberGenerator;

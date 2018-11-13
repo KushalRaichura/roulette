@@ -18,8 +18,6 @@ public class BetResponse {
 
     private int spinResult;
 
-    public BetResponse() {}
-
     public int getSpinResult() {
         return spinResult;
     }

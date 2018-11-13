@@ -73,6 +73,7 @@ public abstract class Bet {
 
     public Bet(int betAmount) {
         this.betAmount = betAmount;
+        this.betOutcome = new BetOutcome();
     }
 
     /**

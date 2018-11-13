@@ -28,7 +28,7 @@ public class RouletteService {
     private final static Logger LOGGER = LoggerFactory.getLogger(RouletteService.class);
 
     @Autowired
-    RandomNumberGenerator randomNumberGenerator;
+    private RandomNumberGenerator randomNumberGenerator;
 
     public BetResponse processBet(@Valid @RequestBody BetRequest betRequest) {
 
