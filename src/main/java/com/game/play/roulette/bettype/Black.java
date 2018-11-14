@@ -36,15 +36,11 @@ public class Black extends Bet {
     @Override
     public void processBet(int spinResult) {
         LOGGER.info("Entering processBet()");
-        BetOutcome outcome = new BetOutcome();
         Arrays.sort(this.pockets);
         if (Arrays.binarySearch(pockets, spinResult) >= 0) {
             LOGGER.debug("processBet() - Black bet successful");
-            outcome.setResultAmount(this.getBetAmount() + this.getBetAmount() * PAYS);
-            outcome.setWon(true);
+            this.setBetOutcome(new BetOutcome(true, this.getBetAmount() + this.getBetAmount() * PAYS));
         }
-
-        this.setBetOutcome(outcome);
         LOGGER.info("Exiting processBet()");
     }
 
