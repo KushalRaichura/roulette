@@ -89,10 +89,6 @@ public abstract class Bet {
         return betAmount;
     }
 
-    public void setBetAmount(int betAmount) {
-        this.betAmount = betAmount;
-    }
-
     public BetOutcome getBetOutcome() {
         return betOutcome;
     }

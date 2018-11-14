@@ -26,16 +26,8 @@ public class BetOutcome {
         return won;
     }
 
-    public void setWon(boolean won) {
-        this.won = won;
-    }
-
     public int getResultAmount() {
         return resultAmount;
-    }
-
-    public void setResultAmount(int resultAmount) {
-        this.resultAmount = resultAmount;
     }
 
     @Override

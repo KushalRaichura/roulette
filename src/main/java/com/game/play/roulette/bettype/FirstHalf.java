@@ -34,13 +34,10 @@ public class FirstHalf extends Bet {
     @Override
     public void processBet(int spinResult) {
         LOGGER.info("Entering processBet()");
-        BetOutcome outcome = new BetOutcome();
         if (spinResult >= LOWER_BOUND && spinResult <= UPPER_BOUND) {
             LOGGER.debug("processBet() - First bet successful");
-            outcome.setResultAmount(this.getBetAmount() + this.getBetAmount() * PAYS);
-            outcome.setWon(true);
+            this.setBetOutcome(new BetOutcome(true, this.getBetAmount() + this.getBetAmount() * PAYS));
         }
-        this.setBetOutcome(outcome);
         LOGGER.info("Exiting processBet()");
     }
 

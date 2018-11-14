@@ -33,13 +33,10 @@ public class TopRow extends Bet {
     @Override
     public void processBet(int spinResult) {
         LOGGER.info("Entering processBet()");
-        BetOutcome outcome = new BetOutcome();
         if (spinResult % 3 == 0) {
             LOGGER.debug("processBet() - TopRow bet successful");
-            outcome.setResultAmount(this.getBetAmount() + this.getBetAmount() * PAYS);
-            outcome.setWon(true);
+            this.setBetOutcome(new BetOutcome(true, this.getBetAmount() + this.getBetAmount() * PAYS));
         }
-        this.setBetOutcome(outcome);
         LOGGER.info("Exiting processBet()");
     }
 
