@@ -6,6 +6,7 @@ This is integrated with Travis for Continuous integration
 ### CI Status
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4c69af2133234da5aa2491ab7420414a)](https://app.codacy.com/app/KushalRaichura/roulette?utm_source=github.com&utm_medium=referral&utm_content=KushalRaichura/roulette&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/KushalRaichura/roulette.svg?branch=master)](https://travis-ci.org/KushalRaichura/roulette)
+[![codecov](https://codecov.io/gh/KushalRaichura/roulette/branch/master/graph/badge.svg)](https://codecov.io/gh/KushalRaichura/roulette)
 
 ## API
 - /roulette/v1/placeBet
